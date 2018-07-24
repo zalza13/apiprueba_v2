@@ -5,11 +5,11 @@ services:
   prueba1.api:
       image: webapi/prueba1.api:${TAG:-latest}
       build:
-        context: src/Prueba1.API/
+        context: src/WebApplication1/
         dockerfile: Infraestructura/Dockerfile
 
   prueba2.api:
       image: webapi/prueba2.api:${TAG:-latest}
       build:
-        context: src/Prueba2.API/
+        context: src/WebApplication2/
         dockerfile: Infraestructura/Dockerfile
